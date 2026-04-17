@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DataChain — Your Data, Your Proof</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { light: '#e0f2fe', mid: '#0ea5e9', dark: '#0369a1' },
+            accent: '#8b5cf6',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Hero -->
+  <header class="bg-gradient-to-br from-sky-700 to-violet-700 text-white py-16 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-5xl mb-4">🔐</div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+        DataChain
+      </h1>
+      <p class="text-xl md:text-2xl font-medium text-sky-100 mb-2">
+        Your Personal Data — Tracked, Proven, Protected.
+      </p>
+      <p class="text-base md:text-lg text-sky-200 max-w-2xl mx-auto">
+        Every time an app <strong class="text-white">creates</strong>, <strong class="text-white">updates</strong>, or <strong class="text-white">shares</strong> your personal data,
+        a permanent record is written to the blockchain — so you always know who has your data and what they did with it.
+      </p>
+    </div>
+  </header>
+
+  <!-- Simple Explainer -->
+  <section class="max-w-4xl mx-auto px-6 py-14">
+    <h2 class="text-3xl font-bold text-center mb-2">What Is This, Simply?</h2>
+    <p class="text-center text-gray-500 mb-10 text-lg">Think of it like a certified mail receipt — for your personal information.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white rounded-2xl shadow p-6 border-t-4 border-sky-400">
+        <div class="text-4xl mb-3">📬</div>
+        <h3 class="font-bold text-lg mb-1">Regular Internet Today</h3>
+        <p class="text-gray-500 text-sm">Apps collect your name, email, and health info — and you have <strong>no idea</strong> where it goes or who sees it.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 border-t-4 border-violet-400">
+        <div class="text-4xl mb-3">🧾</div>
+        <h3 class="font-bold text-lg mb-1">DataChain Adds a Receipt</h3>
+        <p class="text-gray-500 text-sm">Every time any app touches your data, a <strong>tamper-proof receipt</strong> is recorded — forever — on the blockchain.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 border-t-4 border-emerald-400">
+        <div class="text-4xl mb-3">✅</div>
+        <h3 class="font-bold text-lg mb-1">You Stay In Control</h3>
+        <p class="text-gray-500 text-sm">You can see every receipt, <strong>audit who has your data</strong>, and hold apps legally accountable — all from one simple dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Timeline -->
+  <section class="bg-white py-14 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-2">How It Works</h2>
+      <p class="text-center text-gray-400 mb-10">Step by step — even Grandma can follow along 👵</p>
+      <ol class="relative border-l-4 border-sky-200 space-y-8 ml-4">
+        <li class="pl-8 relative">
+          <span class="absolute -left-5 bg-sky-500 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">1</span>
+          <h4 class="font-bold text-lg">You sign up for an app — say, a doctor's portal.</h4>
+          <p class="text-gray-500 text-sm mt-1">The app collects your name, date of birth, and medical history.</p>
+        </li>
+        <li class="pl-8 relative">
+          <span class="absolute -left-5 bg-violet-500 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">2</span>
+          <h4 class="font-bold text-lg">DataChain automatically logs a <em>creation record</em>.</h4>
+          <p class="text-gray-500 text-sm mt-1">A digital fingerprint (hash) of what was collected, when, and by whom is written to the blockchain. No personal data is stored on the chain — only the proof.</p>
+        </li>
+        <li class="pl-8 relative">
+          <span class="absolute -left-5 bg-emerald-500 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">3</span>
+          <h4 class="font-bold text-lg">The doctor's office shares your record with a specialist.</h4>
+          <p class="text-gray-500 text-sm mt-1">A <em>share record</em> is logged — who shared it, who received it, and the exact timestamp.</p>
+        </li>
+        <li class="pl-8 relative">
+          <span class="absolute -left-5 bg-amber-500 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">4</span>
+          <h4 class="font-bold text-lg">You open your DataChain dashboard and see the full chain.</h4>
+          <p class="text-gray-500 text-sm mt-1">A simple timeline shows every event — just like tracking a package on UPS, but for your personal information.</p>
+        </li>
+        <li class="pl-8 relative">
+          <span class="absolute -left-5 bg-rose-500 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">5</span>
+          <h4 class="font-bold text-lg">Dispute anything. Prove everything.</h4>
+          <p class="text-gray-500 text-sm mt-1">If an app claims they deleted your data — you can verify it. If they lied, the blockchain proves it. That receipt cannot be altered.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Side-by-Side Comparison -->
+  <section class="max-w-6xl mx-auto px-6 py-14">
+    <h2 class="text-3xl font-bold text-center mb-2">Side-by-Side Comparison</h2>
+    <p class="text-center text-gray-400 mb-10 text-lg">How DataChain changes the experience for everyone</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- User Column -->
+      <div class="bg-gradient-to-b from-sky-50 to-white rounded-2xl border border-sky-200 shadow-lg overflow-hidden">
+        <div class="bg-sky-600 text-white px-6 py-4 flex items-center gap-3">
+          <span class="text-3xl">👤</span>
+          <div>
+            <h3 class="text-xl font-bold">You — The User</h3>
+            <p class="text-sky-100 text-sm">Regular person. No tech skills required.</p>
+          </div>
+        </div>
+        <div class="p-6 space-y-5">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">🔎</span>
+            <div>
+              <p class="font-semibold">See everything in plain English</p>
+              <p class="text-gray-500 text-sm">"Your email was shared with Google Ads on April 3rd at 2:14 PM."</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">🔔</span>
+            <div>
+              <p class="font-semibold">Get alerts when your data moves</p>
+              <p class="text-gray-500 text-sm">Instant notification any time an app creates, updates, or shares your info.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">📋</span>
+            <div>
+              <p class="font-semibold">Download your full data history</p>
+              <p class="text-gray-500 text-sm">One-click export of every data event, ready for a lawyer or regulator.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">🚫</span>
+            <div>
+              <p class="font-semibold">Revoke access with one tap</p>
+              <p class="text-gray-500 text-sm">Tell an app to delete your data — and the blockchain records whether they actually did it.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">🧓</span>
+            <div>
+              <p class="font-semibold">Designed for everyone</p>
+              <p class="text-gray-500 text-sm">Large text, simple icons, plain-language explanations. No blockchain knowledge needed.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mock Dashboard -->
+        <div class="mx-6 mb-6 bg-white border border-sky-100 rounded-xl p-4 shadow-inner">
+          <p class="text-xs font-bold text-sky-600 uppercase tracking-wide mb-3">Your Data Activity — Last 7 Days</p>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span><span class="text-gray-600">Apr 15 · <strong>Facebook</strong> updated your profile data</span></li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-400 inline-block"></span><span class="text-gray-600">Apr 14 · <strong>Health App</strong> shared data with insurer</span></li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-sky-400 inline-block"></span><span class="text-gray-600">Apr 12 · <strong>Bank Portal</strong> created account record</span></li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-rose-400 inline-block"></span><span class="text-gray-600">Apr 10 · <strong>Ad Network</strong> shared your location ⚠️</span></li>
+          </ul>
+          <button class="mt-4 w-full bg-sky-600 hover:bg-sky-700 text-white text-sm font-semibold py-2 rounded-lg transition">View Full History →</button>
+        </div>
+      </div>
+
+      <!-- App Owner Column -->
+      <div class="bg-gradient-to-b from-violet-50 to-white rounded-2xl border border-violet-200 shadow-lg overflow-hidden">
+        <div class="bg-violet-600 text-white px-6 py-4 flex items-center gap-3">
+          <span class="text-3xl">🏢</span>
+          <div>
+            <h3 class="text-xl font-bold">App Owner / Business</h3>
+            <p class="text-violet-100 text-sm">Developer, startup, or enterprise.</p>
+          </div>
+        </div>
+        <div class="p-6 space-y-5">
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">🔌</span>
+            <div>
+              <p class="font-semibold">Simple API integration</p>
+              <p class="text-gray-500 text-sm">Add 3 lines of code to your existing app. DataChain handles the blockchain automatically.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">⚖️</span>
+            <div>
+              <p class="font-semibold">Built-in compliance (GDPR, CCPA)</p>
+              <p class="text-gray-500 text-sm">Automatic audit logs satisfy regulators. No more scrambling for data breach reports.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">🛡️</span>
+            <div>
+              <p class="font-semibold">Prove you're trustworthy</p>
+              <p class="text-gray-500 text-sm">Display a DataChain Trust Badge — users can verify your data practices in real time.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">📊</span>
+            <div>
+              <p class="font-semibold">Admin compliance dashboard</p>
+              <p class="text-gray-500 text-sm">See all data events across your platform, flag anomalies, and respond to user requests instantly.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-2xl">💼</span>
+            <div>
+              <p class="font-semibold">Reduce legal liability</p>
+              <p class="text-gray-500 text-sm">Immutable records prove you followed the rules — even if a third-party partner did not.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mock Admin Panel -->
+        <div class="mx-6 mb-6 bg-white border border-violet-100 rounded-xl p-4 shadow-inner">
+          <p class="text-xs font-bold text-violet-600 uppercase tracking-wide mb-3">Compliance Overview — Your App</p>
+          <div class="grid grid-cols-3 gap-2 text-center text-sm mb-3">
+            <div class="bg-violet-50 rounded-lg p-2">
+              <p class="text-xl font-bold text-violet-600">4,821</p>
+              <p class="text-gray-500 text-xs">Records Created</p>
+            </div>
+            <div class="bg-emerald-50 rounded-lg p-2">
+              <p class="text-xl font-bold text-emerald-600">99.8%</p>
+              <p class="text-gray-500 text-xs">Compliance Rate</p>
+            </div>
+            <div class="bg-rose-50 rounded-lg p-2">
+              <p class="text-xl font-bold text-rose-600">2</p>
+              <p class="text-gray-500 text-xs">Open Disputes</p>
+            </div>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span><span class="text-gray-600">GDPR deletion request #482 — <strong>completed ✓</strong></span></li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-400 inline-block"></span><span class="text-gray-600">Third-party share to analytics — <strong>pending consent</strong></span></li>
+          </ul>
+          <button class="mt-4 w-full bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold py-2 rounded-lg transition">Open Admin Console →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Comparison Table -->
+  <section class="bg-white py-14 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Feature Comparison</h2>
+      <div class="overflow-x-auto rounded-2xl shadow border border-gray-100">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-gray-800 text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold w-1/2">Feature</th>
+              <th class="px-5 py-4 font-semibold text-center">👤 User</th>
+              <th class="px-5 py-4 font-semibold text-center">🏢 App Owner</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">View data creation events</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">View data update history</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">See who your data was shared with</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">Real-time alerts on data events</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+              <td class="px-5 py-4 text-center text-gray-300 font-bold text-lg">—</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">Request data deletion &amp; verify it happened</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+              <td class="px-5 py-4 text-center text-gray-300 font-bold text-lg">—</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">Manage consent &amp; revoke access</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+              <td class="px-5 py-4 text-center text-gray-300 font-bold text-lg">—</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">GDPR / CCPA auto-compliance logs</td>
+              <td class="px-5 py-4 text-center text-gray-300 font-bold text-lg">—</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">API integration (3 lines of code)</td>
+              <td class="px-5 py-4 text-center text-gray-300 font-bold text-lg">—</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">DataChain Trust Badge for your site</td>
+              <td class="px-5 py-4 text-center text-gray-300 font-bold text-lg">—</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-5 py-4">Immutable blockchain proof (no tampering)</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+              <td class="px-5 py-4 text-center text-emerald-500 font-bold text-lg">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Blockchain -->
+  <section class="max-w-4xl mx-auto px-6 py-14">
+    <h2 class="text-3xl font-bold text-center mb-2">Why Blockchain?</h2>
+    <p class="text-center text-gray-400 mb-10">Three words: <strong>Nobody can lie.</strong></p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white rounded-2xl shadow p-6">
+        <div class="text-4xl mb-3">🔒</div>
+        <h4 class="font-bold mb-1">Tamper-Proof</h4>
+        <p class="text-gray-500 text-sm">Once a record is written, it cannot be changed or deleted — by anyone, including us.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <div class="text-4xl mb-3">🌐</div>
+        <h4 class="font-bold mb-1">Decentralized</h4>
+        <p class="text-gray-500 text-sm">No single company controls the records. Thousands of computers around the world hold copies.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <div class="text-4xl mb-3">📎</div>
+        <h4 class="font-bold mb-1">Privacy-Safe</h4>
+        <p class="text-gray-500 text-sm">Only a cryptographic fingerprint (hash) is stored on-chain — never your actual personal data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-violet-700 to-sky-700 text-white py-16 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-5xl mb-4">🚀</div>
+      <h2 class="text-3xl font-bold mb-3">Data privacy shouldn't be complicated.</h2>
+      <p class="text-sky-100 text-lg mb-8">DataChain makes it simple, honest, and provable — for everyone.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-white text-violet-700 font-bold px-8 py-3 rounded-xl hover:bg-sky-50 transition shadow-lg">Get Early Access</button>
+        <button class="border-2 border-white text-white font-bold px-8 py-3 rounded-xl hover:bg-white hover:text-violet-700 transition">For Developers →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center text-sm py-6">
+    <p>© 2026 DataChain — Blockchain Data Provenance Platform. Built with ❤️ for privacy.</p>
+  </footer>
+
+</body>
+</html>
